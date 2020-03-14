@@ -1,0 +1,35 @@
+{
+  "name": "@ri7nz/bs-scroll-position",
+  "version": "1.0.0",
+  "description": "Reason / BuckleScript bindings for @n8tb1t/use-scroll-position",
+  "repository": "https://github.com/ri7nz/rehook/blob/master/packages/bs-scroll-position",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src/*.re",
+    "bsconfig.json"
+  ],
+  "keywords": [
+    "Reason",
+    "BuckleScript",
+    "bs",
+    "bucklescript",
+    "bucklescript-bindings",
+    "react",
+    "react-dom",
+    "reasonml",
+    "reason",
+    "reason-react"
+  ],
+  "peerDependencies": {
+    "@n8tb1t/use-scroll-position": ">=1.0.0",
+    "react": ">=16.8.0",
+    "reason-react": ">=0.7.0"
+  },
+  "devDependencies": {
+    "@n8tb1t/use-scroll-position": "n8tb1t/use-scroll-position",
+    "bs-platform": "5.0.1"
+  }
+}

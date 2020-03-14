@@ -1,0 +1,41 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "4.2.3",
+    "lerna": "^3.19.0",
+    "lint-staged": "^10.0.8",
+    "pre-commit": "^1.2.2",
+    "prettier": "1.19.1"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "start": "yarn bs:watch",
+    "build": "yarn bs:build",
+    "lint:staged": "lint-staged",
+    "bs:setup": "bsb -make-world",
+    "bs:build": "lerna run bs:build",
+    "bs:watch": "lerna run bs:watch"
+  },
+  "lint-staged": {
+    "*.re": [
+      "bsrefmt --in-place"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "pre-commit": "lint:staged",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
