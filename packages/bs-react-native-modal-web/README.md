@@ -10,6 +10,7 @@
 - [Usage](#usage)
 - [Changelog](#changelog)
 - [Contribution](#contribution)
+- [License](#license)
 - [Alternative](#alternative)
 
 ## Installation
@@ -54,6 +55,10 @@ let make = () =>
 ## Contribution
 
 > Feel Free for contribution on this project.
+
+## License
+
+[MIT](https://ri7nz.mit-license.org/)
 
 ## Alternative
 
