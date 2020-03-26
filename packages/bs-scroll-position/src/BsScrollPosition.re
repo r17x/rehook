@@ -31,3 +31,21 @@ external useScrollPosition: ([@bs.uncurry] (scroll => option(unit))) => unit =
 external useScrollPosition1:
   ([@bs.uncurry] (scroll => option(unit)), array('a)) => unit =
   "useScrollPosition";
+
+/**
+ * let (elementPosition, setElementPosition) =
+ *           React.useState( _ => { x: 20, y: 150 });
+ *
+ * let elementRef = React.useRef(None);
+ *
+ * useScrollPosition(
+ *  ({ currPos }) => {
+ *    setElementPosition(_ => currPos)
+ *  }, [||], elementRef
+ * );
+ *
+ */
+[@bs.module "@n8tb1t/use-scroll-position"]
+external useScrollPositionWithRef:
+  ([@bs.uncurry] (scroll => option(unit)), array('a), React.Ref.t) => unit =
+  "useScrollPosition";
