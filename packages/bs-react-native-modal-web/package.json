@@ -1,0 +1,30 @@
+{
+  "name": "@ri7nz/bs-react-native-modal-web",
+  "version": "1.0.0",
+  "description": "Reason / BuckleScript bindings for modal-enhanced-react-native-web (alternative version of react-native-modal, support for web)",
+  "main": "index.js",
+  "repository": "https://github.com/ri7nz/rehook/blob/master/packages/bs-react-native-modal-web",
+  "author": "ri7nz",
+  "keywords": [
+    "Reason",
+    "BuckleScript",
+    "bs",
+    "bucklescript",
+    "bucklescript-bindings",
+    "react",
+    "react-dom",
+    "reasonml",
+    "reason",
+    "reason-react",
+    "react-native",
+    "react-native-modal",
+    "react-native-modal-web"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "modal-enhanced-react-native-web": "^0.2.0"
+  },
+  "peerDependencies": {
+    "reason-react": ">=0.7.0"
+  }
+}

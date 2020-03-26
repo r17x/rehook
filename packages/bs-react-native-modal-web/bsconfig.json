@@ -1,0 +1,19 @@
+{
+  "name": "@ri7nz/bs-react-native-modal-web",
+  "refmt": 3,
+  "reason": {
+    "react-jsx": 3
+  },
+  "suffix": ".bs.js",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    {
+      "dir": "test",
+      "type": "dev"
+    }
+  ],
+  "bs-dependencies": ["reason-react"]
+}
